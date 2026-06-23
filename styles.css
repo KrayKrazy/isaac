@@ -636,6 +636,23 @@ footer {
     overflow: hidden;
     box-shadow: var(--shadow-sm);
     aspect-ratio: 4/5;
+    position: relative;
+}
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(26, 26, 26, 0.9);
+    color: var(--color-primary);
+    padding: 12px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.25rem;
+    font-family: var(--font-heading);
+    letter-spacing: 0.05em;
+    backdrop-filter: blur(4px);
+    border-top: 2px solid var(--color-primary);
 }
 .gallery-item img {
     width: 100%;
