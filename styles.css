@@ -1,19 +1,20 @@
 /* Base Reset and Design Tokens */
 :root {
-    /* Colors - Elegant Green Theme */
-    --color-primary: #4C734C;
-    --color-primary-dark: #3A593A;
-    --color-primary-light: #E8EFE8;
-    --color-accent: #C4D3C4;
+    /* Colors - High Contrast Industrial Theme */
+    --color-primary: #F5B800; /* Amarelo Ouro */
+    --color-primary-dark: #D49F00;
+    --color-primary-light: #FFF8E5;
+    --color-accent: #EAEAEA; /* Cinza Prata */
     --color-white: #ffffff;
-    --color-background: #F9F9F6;
+    --color-background: #ffffff;
     --color-surface: #ffffff;
-    --color-text-main: #2b302b;
-    --color-text-muted: #6b726b;
-    --color-border: #D3DED3;
+    --color-text-main: #1A1A1A; /* Preto Profundo */
+    --color-text-muted: #4A4A4A;
+    --color-border: #EAEAEA;
 
     /* Typography */
     --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-heading: 'Montserrat', sans-serif;
     
     /* Spacing & Sizes */
     --spacing-xs: 0.5rem;
@@ -21,14 +22,14 @@
     --spacing-md: 1.5rem;
     --spacing-lg: 2.5rem;
     --spacing-xl: 4rem;
-    --border-radius: 16px;
-    --border-radius-sm: 8px;
+    --border-radius: 6px;
+    --border-radius-sm: 4px;
     
-    /* Shadows - Soft UI */
-    --shadow-sm: 0 1px 2px 0 rgba(43, 48, 43, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(43, 48, 43, 0.05), 0 2px 4px -1px rgba(43, 48, 43, 0.03);
-    --shadow-lg: 0 10px 25px -3px rgba(43, 48, 43, 0.08), 0 4px 6px -2px rgba(43, 48, 43, 0.04);
-    --shadow-hover: 0 20px 25px -5px rgba(76, 115, 76, 0.15), 0 10px 10px -5px rgba(76, 115, 76, 0.04);
+    /* Shadows - Hard Shadows Industrial */
+    --shadow-sm: 2px 2px 0px rgba(0, 0, 0, 0.1);
+    --shadow-md: 4px 4px 0px rgba(0, 0, 0, 0.8);
+    --shadow-lg: 6px 6px 0px rgba(0, 0, 0, 0.9);
+    --shadow-hover: 8px 8px 0px rgba(0, 0, 0, 1);
 }
 
 * {
@@ -62,13 +63,14 @@ a {
 
 /* Typography Utilities */
 h1, h2, h3, h4 {
-    font-weight: 700;
+    font-weight: 800;
     line-height: 1.2;
     color: var(--color-text-main);
+    font-family: var(--font-heading);
 }
 
-h1 { font-size: clamp(2.5rem, 5vw, 4rem); letter-spacing: -0.02em; }
-h2 { font-size: clamp(2rem, 4vw, 2.5rem); letter-spacing: -0.01em; margin-bottom: 1rem; }
+h1 { font-size: clamp(2.5rem, 5vw, 4rem); letter-spacing: -0.02em; font-weight: 900; text-transform: uppercase; }
+h2 { font-size: clamp(2rem, 4vw, 2.5rem); letter-spacing: -0.01em; margin-bottom: 1rem; text-transform: uppercase; }
 h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
 
 p { color: var(--color-text-muted); }
@@ -87,25 +89,27 @@ p { color: var(--color-text-muted); }
     justify-content: center;
     gap: 0.5rem;
     padding: 0.75rem 1.5rem;
-    border-radius: 50px;
-    font-weight: 600;
+    border-radius: var(--border-radius);
+    font-weight: 700;
     font-size: 1rem;
     cursor: pointer;
-    transition: all 0.3s ease;
-    border: none;
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .btn-primary {
     background-color: var(--color-primary);
-    color: var(--color-white);
-    box-shadow: 0 4px 14px 0 rgba(76, 115, 76, 0.39);
+    color: var(--color-text-main);
+    box-shadow: var(--shadow-sm);
+    border-color: var(--color-text-main);
 }
 
 .btn-primary:hover {
     background-color: var(--color-primary-dark);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px 0 rgba(76, 115, 76, 0.4);
+    box-shadow: var(--shadow-md);
 }
 
 .btn-secondary {
@@ -131,11 +135,16 @@ p { color: var(--color-text-muted); }
 }
 
 .btn-white {
-    background-color: var(--color-white);
+    background-color: var(--color-text-main);
     color: var(--color-primary);
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-sm);
 }
 
 .btn-white:hover {
+    background-color: var(--color-primary);
+    color: var(--color-text-main);
+    border-color: var(--color-text-main);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
@@ -156,7 +165,7 @@ p { color: var(--color-text-muted); }
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(249, 249, 246, 0.9);
+    background-color: rgba(26, 26, 26, 0.95);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--color-border);
     z-index: 1000;
@@ -181,8 +190,9 @@ p { color: var(--color-text-muted); }
     gap: 0.5rem;
     font-size: 1.5rem;
     font-weight: 800;
-    color: var(--color-primary);
-    font-family: 'Playfair Display', serif;
+    color: var(--color-white);
+    font-family: var(--font-heading);
+    text-transform: uppercase;
 }
 
 .logo i {
@@ -196,7 +206,7 @@ p { color: var(--color-text-muted); }
 
 .desktop-nav a {
     font-weight: 500;
-    color: var(--color-text-main);
+    color: var(--color-white);
     transition: color 0.2s ease;
 }
 
@@ -228,7 +238,7 @@ p { color: var(--color-text-muted); }
 .hero h1 {
     color: var(--color-text-main);
     margin: 1rem 0;
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
 }
 
 .hero h1 span {
@@ -238,11 +248,11 @@ p { color: var(--color-text-muted); }
 .badge {
     display: inline-block;
     padding: 0.25rem 0.75rem;
-    background-color: rgba(76, 115, 76, 0.15);
+    background-color: var(--color-text-main);
     color: var(--color-primary);
     border-radius: 20px;
     font-size: 0.875rem;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
@@ -472,14 +482,15 @@ p { color: var(--color-text-muted); }
 }
 
 .promo-box {
-    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    background: linear-gradient(135deg, var(--color-text-main) 0%, var(--color-text-muted) 100%);
     border-radius: 24px;
     padding: 3rem;
     color: white;
     text-align: center;
-    box-shadow: 0 20px 40px -10px rgba(76, 115, 76, 0.4);
+    box-shadow: var(--shadow-lg);
     position: relative;
     overflow: hidden;
+    border: 2px solid var(--color-primary);
 }
 
 .promo-box::before {
@@ -514,7 +525,7 @@ p { color: var(--color-text-muted); }
 
 /* Footer */
 footer {
-    background-color: var(--color-primary-dark);
+    background-color: var(--color-text-main);
     color: white;
     padding: 4rem 0 0;
 }
@@ -629,8 +640,9 @@ footer {
 .gallery-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: transform 0.4s ease;
+    background-color: var(--color-background);
 }
 .gallery-item:hover img {
     transform: scale(1.05);

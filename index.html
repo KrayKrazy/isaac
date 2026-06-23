@@ -9,10 +9,11 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
     
-    <!-- Phosphor Icons -->
+    <!-- Phosphor Icons & Swiper CSS -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     
     <link rel="stylesheet" href="./styles.css">
 </head>
@@ -161,13 +162,21 @@
                 <h2>Galeria</h2>
                 <p>Conheça mais detalhes dos nossos produtos de alta qualidade.</p>
             </div>
-            <div class="gallery-grid">
-                <div class="gallery-item"><img src="./images/espanador_10.jpeg" alt="Galeria" loading="lazy"></div>
-                <div class="gallery-item"><img src="./images/espanador_11.jpeg" alt="Galeria" loading="lazy"></div>
-                <div class="gallery-item"><img src="./images/espanador_14.jpeg" alt="Galeria" loading="lazy"></div>
-                <div class="gallery-item"><img src="./images/espanador_15.jpeg" alt="Galeria" loading="lazy"></div>
-                <div class="gallery-item"><img src="./images/espanador_16.jpeg" alt="Galeria" loading="lazy"></div>
-                <div class="gallery-item"><img src="./images/espanador_17.jpeg" alt="Galeria" loading="lazy"></div>
+            
+            <div class="swiper gallerySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide gallery-item"><img src="./images/espanador_10.jpeg" alt="Galeria" loading="lazy"></div>
+                    <div class="swiper-slide gallery-item"><img src="./images/espanador_11.jpeg" alt="Galeria" loading="lazy"></div>
+                    <div class="swiper-slide gallery-item"><img src="./images/espanador_14.jpeg" alt="Galeria" loading="lazy"></div>
+                    <div class="swiper-slide gallery-item"><img src="./images/espanador_15.jpeg" alt="Galeria" loading="lazy"></div>
+                    <div class="swiper-slide gallery-item"><img src="./images/espanador_16.jpeg" alt="Galeria" loading="lazy"></div>
+                    <div class="swiper-slide gallery-item"><img src="./images/espanador_17.jpeg" alt="Galeria" loading="lazy"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
     </section>
@@ -248,6 +257,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>

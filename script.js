@@ -61,4 +61,30 @@ document.addEventListener('DOMContentLoaded', () => {
         card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
         observer.observe(card);
     });
+
+    // Initialize Gallery Swiper
+    const swiperEl = document.querySelector('.gallerySwiper');
+    if (swiperEl && typeof Swiper !== 'undefined') {
+        new Swiper('.gallerySwiper', {
+            slidesPerView: 1.2,
+            spaceBetween: 16,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.gallery-section .swiper-button-next',
+                prevEl: '.gallery-section .swiper-button-prev',
+            },
+            pagination: {
+                el: '.gallery-section .swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                640: { slidesPerView: 2.2, spaceBetween: 20 },
+                1024: { slidesPerView: 3.5, spaceBetween: 24 }
+            }
+        });
+    }
 });
