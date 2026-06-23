@@ -580,3 +580,58 @@ footer {
         gap: 2rem;
     }
 }
+
+/* --- CUSTOM NS ESPANADORES CSS --- */
+
+/* Logo adjustments */
+.logo-img {
+    height: 45px;
+    width: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.logo-img-footer {
+    height: 55px;
+    width: auto;
+    border-radius: 8px;
+    background: #fff;
+    padding: 4px;
+}
+
+/* Products Bundle */
+.product-bundle {
+    font-size: 1.05rem !important;
+    color: var(--color-text-main) !important;
+    background: rgba(76, 115, 76, 0.1);
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-bottom: 15px !important;
+    border: 1px dashed var(--color-primary);
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 6rem 0;
+    background-color: var(--color-background);
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 2rem;
+}
+.gallery-item {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    aspect-ratio: 4/5;
+}
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
