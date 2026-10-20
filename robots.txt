@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Bloqueio de rotas transacionais e estados efêmeros (Padrão Enterprise E-commerce)
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /account/
+Disallow: /api/
+
+# Bloqueio de filtros dinâmicos para prevenção de crawl budget waste
+Disallow: /*?*sort=
+Disallow: /*?*price_range=
+Disallow: /*?*cart=
+
+Sitemap: https://kraykrazy.github.io/isaac/sitemap.xml

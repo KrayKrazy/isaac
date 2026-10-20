@@ -1,0 +1,11 @@
+{
+  "name": "ns-espanadores-ecommerce",
+  "version": "2.0.0",
+  "description": "E-commerce B2B/Atacado NS Espanadores de Pena de Avestruz com Checkout Integrado Cakto",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "dev": "npx vercel dev",
+    "start": "node server.js"
+  }
+}

@@ -1,0 +1,31 @@
+# NS Espanadores — E-commerce Oficial de Atacado (Pena de Avestruz)
+
+> Fabricação própria de espanadores confeccionados em pena de avestruz legítima com plumas importadas padronizadas. Venda direta de fábrica para lojistas, distribuidores, supermercados, ferragens e atacadistas no Distrito Federal, Entorno e Brasil.
+
+## Dados da Empresa
+- **Marca:** NS Espanadores
+- **Modelo de Negócio:** Indústria e Atacado B2B / B2C (Pacotes fechados com 6 unidades e Kits Lojista)
+- **Região de Atuação Principal:** Distrito Federal (DF) e Entorno
+- **Política de Frete:**
+  - **Distrito Federal (DF):** Frete Grátis em pedidos a partir de R$ 500,00.
+  - **Entorno do DF e demais localidades:** Frete a combinar ou retirada direta.
+- **Meios de Pagamento (Integrado via Cakto):** PIX imediato (QR Code / Copia e Cola), Cartão de Crédito em até 12x, PicPay, Apple Pay e Google Pay.
+- **Atendimento Comercial (WhatsApp):**
+  - Sebastião: +55 (61) 99516-3560 / +55 (61) 99974-0857
+  - Neide: +55 (61) 99247-5997
+
+## Catálogo Oficial de Produtos (Atacado — Pacotes com 6 Unidades)
+
+| SKU | Produto | Preço Unitário no Pacote | Preço do Pacote (6 un.) | Indicação de Uso |
+| :--- | :--- | :--- | :--- | :--- |
+| `NS-30` | Espanador de Pena de Avestruz Nº 30 (Pacote 6 un.) | R$ 13,80 | R$ 82,80 | Rotina diária, residências, escritórios e painéis automotivos |
+| `NS-35` | Espanador de Pena de Avestruz Nº 35 (Pacote 6 un.) | R$ 16,80 | R$ 100,80 | Móveis de porte médio, estantes e comércio em geral |
+| `NS-40` | Espanador de Pena de Avestruz Nº 40 (Pacote 6 un.) | R$ 17,80 | R$ 106,80 | Alta versatilidade e giro rápido em lojas de utilidades |
+| `NS-50` | Espanador de Pena de Avestruz Nº 50 (Pacote 6 un.) | R$ 21,50 | R$ 129,00 | Limpeza rápida de grandes superfícies e vitrines |
+| `NS-60` | Espanador de Pena de Avestruz Nº 60 (Pacote 6 un.) | R$ 26,90 | R$ 161,40 | Áreas amplas, locais altos e uso profissional pesado |
+| `NS-KIT-MIX` | Kit Lojista Mix Completo (5 Pacotes: Nº 30 ao 60 — 30 un.) | R$ 19,36 (médio) | R$ 580,80 | Grade completa para exposição em loja + Frete Grátis DF incluso |
+
+## Diferenciais Técnicos
+1. **Plumas de Avestruz Importadas:** Eletrostática natural que atrai e retém a poeira sem espalhar e sem riscar superfícies delicadas (cristais, telas, pianos, automóveis, móveis planejados).
+2. **Padronização Industrial:** Rigoroso controle de comprimento e volume de plumas em todas as numerações (Nº 30 ao Nº 60).
+3. **Alta Margem para Revenda:** Preço direto da fábrica permitindo excelente markup para lojistas de utilidades domésticas, agropecuárias, armarinhos, mercados e distribuidoras de limpeza.
