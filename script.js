@@ -549,7 +549,7 @@
             paymentMethod
         };
 
-        const endpoints = ['/api/checkout', 'https://ns-espanadores.vercel.app/api/checkout'];
+        const endpoints = ['/api/checkout', 'https://ns-espanadores-kelevra.vercel.app/api/checkout', 'https://ns-espanadores.vercel.app/api/checkout'];
 
         try {
             for (const ep of endpoints) {
